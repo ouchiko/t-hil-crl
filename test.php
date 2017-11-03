@@ -29,6 +29,7 @@ curl_setopt($ch, CURLOPT_COOKIEFILE, "/tmp/tmpcookies");
 curl_setopt($ch, CURLOPT_MAXREDIRS, 20);
 curl_setopt($ch, CURLOPT_TIMEOUT, 50);
 if ($parameters['use_proxy']) {
+    print "Setting proxy details...\n";
     curl_setopt($ch, CURLOPT_PROXY, $parameters['proxy_details']);
 }
 /* Execute */
